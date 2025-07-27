@@ -35,7 +35,7 @@ const IMAGES_PER_VIEW = 3;
 function openGallery(project) {
     currentGallery = galleries[project];
     currentIndex = 0;
-    document.getElementById('galleryTitle').textContent = project; // Set project name
+    document.getElementById('galleryTitle').textContent = project;
     updateGalleryModal();
     document.getElementById('galleryModal').style.display = 'flex';
 }
@@ -45,7 +45,6 @@ function updateGalleryModal() {
     const descDiv = document.getElementById('galleryDescription');
     imagesDiv.innerHTML = '';
 
-    // Show IMAGES_PER_VIEW images starting from currentIndex
     for (let i = currentIndex; i < Math.min(currentIndex + IMAGES_PER_VIEW, currentGallery.images.length); i++) {
         const img = document.createElement('img');
         img.src = currentGallery.images[i];
@@ -55,7 +54,6 @@ function updateGalleryModal() {
         imagesDiv.appendChild(img);
     }
 
-    // Add arrows
     imagesDiv.insertAdjacentHTML('afterbegin', `<span class="arrow left" onclick="scrollGallery(-1)">&lt;</span>`);
     imagesDiv.insertAdjacentHTML('beforeend', `<span class="arrow right" onclick="scrollGallery(1)">&gt;</span>`);
 
