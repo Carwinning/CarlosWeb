@@ -136,7 +136,8 @@ footer {
     align-items: center;
     box-shadow: 0 0 24px 4px #ffbb55, 0 0 0 4px #ffbb55;
     border: 2px solid #ffbb55;
-    overflow: hidden;
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 .close {

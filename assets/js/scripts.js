@@ -157,13 +157,13 @@ const galleries = {
 
 galleries.Trident = Object.assign(galleries.Trident || {}, {
     videos: [
-        'https://youtube.com/shorts/RmS8dYewYpU?si=hax23ARUBnXjCTA1',
-        'https://youtube.com/shorts/fHIOsCBUF-Y?si=2_-Qd7uE1dGrtb7X'
+        'https://youtube.com/watch?v=RmS8dYewYpU?si=hax23ARUBnXjCTA1',
+        'https://youtube.com/watch?v=fHIOsCBUF-Y?si=2_-Qd7uE1dGrtb7X'
     ]
 });
 galleries.SauceathonBot = Object.assign(galleries.SauceathonBot || {}, {
     videos: [
-        'https://youtube.com/shorts/ZlGhO-jDPcA?si=auYscJAhavUlpejI'
+        'https://youtube.com/watch?v=ZlGhO-jDPcA?si=auYscJAhavUlpejI'
     ]
 });
 galleries.StrobeDemo = Object.assign(galleries.StrobeDemo || {}, {
