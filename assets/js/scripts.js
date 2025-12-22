@@ -177,8 +177,13 @@ function openGallery(project) {
     currentGallery = galleries[project];
     currentIndex = 0;
     document.getElementById('galleryTitle').textContent = project;
-    updateGalleryModal();
-    document.getElementById('galleryModal').style.display = 'flex';
+
+    const modalEl = document.getElementById('galleryModal');
+    modalEl.style.display = 'flex';
+
+    requestAnimationFrame(() => {
+        updateGalleryModal();
+    });
 }
 
 function updateGalleryModal() {
