@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Juice</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="smart-juice.html">Smart Juice</a></li>
+            <li><a href="creative-juice.html" class="active">Creative Juice</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>CREATIVE JUICE</h1>
+        <h3>Check out all of my for fun art-y and creative projects!</h3>
+
+        <br>
+        <h1>Project Gallery</h1>
+        
+        <div class="gallery-grid">
+            <div class="project-thumb" onclick="openGallery('GlassFlowers')">
+                <div class="thumb-container">
+                    <img src="assets/images/creativejuice/GlassFlowers/thumb.jpeg" alt="GlassFlowers">
+                    <div class="thumb-overlay">
+                        <span class="thumb-title">Glass Flowers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-thumb" onclick="openGallery('GlassCritters')">
+                <div class="thumb-container">
+                    <img src="assets/images/creativejuice/GlassCritters/thumb.jpeg" alt="GlassCritters">
+                    <div class="thumb-overlay">
+                        <span class="thumb-title">Glass Critters</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-thumb" onclick="openGallery('CreativeMisc')">
+                <div class="thumb-container">
+                    <img src="assets/images/creativejuice/Misc/thumb.jpeg" alt="CreativeMisc">
+                    <div class="thumb-overlay">
+                        <span class="thumb-title">Misc</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="galleryModal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeGallery()">&times;</span>
+                <h2 id="galleryTitle"></h2> 
+                <div id="galleryImages"></div>
+                <div id="galleryDescription"></div>
+            </div>
+        </div>
+
+    </main>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

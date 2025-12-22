@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Juice</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="smart-juice.html" class="active">Smart Juice</a></li>
+            <li><a href="creative-juice.html">Creative Juice</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>SMART JUICE</h1>
+        <h3>Check out all of my engineering and design based projects, big and small!</h3>
+
+        <br>
+        <h1>Project Gallery</h1>
+
+        <div class="gallery-grid">
+            <div class="project-thumb" onclick="openGallery('Trident')">
+                <div class="thumb-container">
+                    <img src="assets/images/smartjuice/Trident/thumb.png" alt="Trident">
+                    <div class="thumb-overlay">
+                        <span class="thumb-title">Trident</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-thumb" onclick="openGallery('UnloadingShip')">
+                <div class="thumb-container">
+                    <img src="assets/images/smartjuice/UnloadingShip/thumb.jpeg" alt="UnloadingShip">
+                    <div class="thumb-overlay">
+                        <span class="thumb-title">Unloading Ship</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-thumb" onclick="openGallery('SauceathonBot')">
+                <div class="thumb-container">
+                    <img src="assets/images/smartjuice/SauceathonBot/thumb.jpeg" alt="SauceathonBot">
+                    <div class="thumb-overlay">
+                        <span class="thumb-title">Sauceathon Bot</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-thumb" onclick="openGallery('StrobeDemo')">
+                <div class="thumb-container">
+                    <img src="assets/images/smartjuice/StrobeDemo/thumb.jpeg" alt="StrobeDemo">
+                    <div class="thumb-overlay">
+                        <span class="thumb-title">Strobe Demo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <h1>Combat Robotics</h1>
+
+        <div class="gallery-grid">
+            <div class="project-thumb" onclick="openGallery('Underdawg')">
+                <div class="thumb-container">
+                    <img src="assets/images/combat-robotics/Underdawg/thumb.jpg" alt="Underdawg">
+                    <div class="thumb-overlay">
+                        <span class="thumb-title">Underdawg</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-thumb" onclick="openGallery('Uppydawg')">
+                <div class="thumb-container">
+                    <img src="assets/images/combat-robotics/Uppydawg/thumb.jpg" alt="Uppydawg">
+                    <div class="thumb-overlay">
+                        <span class="thumb-title">Uppydawg</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-thumb" onclick="openGallery('DAYBREAK')">
+                <div class="thumb-container">
+                    <img src="assets/images/combat-robotics/DAYBREAK/thumb.jpeg" alt="DAYBREAK">
+                    <div class="thumb-overlay">
+                        <span class="thumb-title">DAYBREAK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-thumb" onclick="openGallery('Maxydawg')">
+                <div class="thumb-container">
+                    <img src="assets/images/combat-robotics/Maxydawg/thumb.jpeg" alt="Maxydawg">
+                    <div class="thumb-overlay">
+                        <span class="thumb-title">Maxydawg</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-thumb" onclick="openGallery('Lildawg')">
+                <div class="thumb-container">
+                    <img src="assets/images/combat-robotics/Lildawg/thumb.jpeg" alt="Lildawg">
+                    <div class="thumb-overlay">
+                        <span class="thumb-title">Lildawg</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="galleryModal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeGallery()">&times;</span>
+                <h2 id="galleryTitle"></h2> 
+                <div id="galleryImages"></div>
+                <div id="galleryDescription"></div>
+            </div>
+        </div>
+
+    </main>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
