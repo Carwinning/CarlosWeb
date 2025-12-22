@@ -145,11 +145,21 @@ function computeImagesPerView() {
 
     const availableWidth = Math.max(0, modal.clientWidth - paddingLeft - paddingRight - arrowReserve);
 
-    const cssMaxPerImage = 220;
+    const MAX_IMAGES = 5; 
+    const MIN_PER_IMAGE = 120;
+    const CAP_PER_IMAGE = 220;
 
-    const perView = Math.floor((availableWidth + gap) / (cssMaxPerImage + gap));
+    const fitByMin = Math.floor((availableWidth + gap) / (MIN_PER_IMAGE + gap));
+    const fitByCap = Math.floor((availableWidth + gap) / (CAP_PER_IMAGE + gap));
 
-    return Math.min(5, Math.max(1, perView || 1));
+    let perView = Math.min(MAX_IMAGES, Math.max(1, fitByMin || 1));
+
+    if (fitByCap > 0 && perView > fitByCap) {
+        perView = Math.min(perView, fitByCap);
+    }
+
+    perView = Math.min(MAX_IMAGES, Math.max(1, perView));
+    return perView;
 }
 
 function ensureArrows() {
@@ -162,12 +172,16 @@ function ensureArrows() {
 
     const left = document.createElement('span');
     left.className = 'arrow left';
+    left.setAttribute('role','button');
+    left.setAttribute('aria-label','Previous');
     left.innerText = '◀';
     left.addEventListener('click', () => scrollGallery(-1));
     modal.appendChild(left);
 
     const right = document.createElement('span');
     right.className = 'arrow right';
+    right.setAttribute('role','button');
+    right.setAttribute('aria-label','Next');
     right.innerText = '▶';
     right.addEventListener('click', () => scrollGallery(1));
     modal.appendChild(right);
@@ -175,15 +189,26 @@ function ensureArrows() {
 
 function openGallery(project) {
     currentGallery = galleries[project];
+    if (!currentGallery) {
+        console.warn('Gallery not found:', project);
+        return;
+    }
     currentIndex = 0;
-    document.getElementById('galleryTitle').textContent = project;
+    const titleEl = document.getElementById('galleryTitle');
+    titleEl && (titleEl.textContent = project);
 
     const modalEl = document.getElementById('galleryModal');
     modalEl.style.display = 'flex';
 
+    ensureArrows();
+
     requestAnimationFrame(() => {
-        updateGalleryModal();
+        requestAnimationFrame(() => {
+            updateGalleryModal();
+        });
     });
+
+    window.addEventListener('resize', updateGalleryModal);
 }
 
 function updateGalleryModal() {
@@ -207,21 +232,25 @@ function updateGalleryModal() {
     const arrowReserve = 64 + 64;
     const availableWidth = Math.max(0, (modal ? modal.clientWidth : window.innerWidth) - paddingLeft - paddingRight - arrowReserve);
     const gap = 16;
-    const perImageWidth = Math.min(220, Math.floor((availableWidth - gap * (perView - 1)) / perView));
 
+    let perImageWidth = Math.floor((availableWidth - gap * (perView - 1)) / perView);
+    perImageWidth = Math.max(80, Math.min(220, perImageWidth)); 
+    
     for (let i = currentIndex; i < Math.min(currentIndex + perView, currentGallery.images.length); i++) {
         const img = document.createElement('img');
         img.src = currentGallery.images[i];
         img.alt = currentGallery.titles ? (currentGallery.titles[i] || '') : '';
+        img.loading = 'lazy';
         img.style.maxWidth = perImageWidth + 'px';
         img.style.maxHeight = 'calc(60vh - 40px)';
         img.style.objectFit = 'cover';
+        img.style.flex = '0 0 auto';
         imagesDiv.appendChild(img);
     }
 
     ensureArrows();
 
-    titleEl && (titleEl.textContent = currentGallery.name || '');
+    titleEl && (titleEl.textContent = currentGallery.name || titleEl.textContent);
     descDiv && (descDiv.textContent = currentGallery.description || '');
 }
 
@@ -237,4 +266,12 @@ function scrollGallery(direction) {
 
 function closeGallery() {
     document.getElementById('galleryModal').style.display = 'none';
+    window.removeEventListener('resize', updateGalleryModal);
+    const modalContent = document.querySelector('.modal-content');
+    if (modalContent) {
+        const l = modalContent.querySelector('.arrow.left');
+        const r = modalContent.querySelector('.arrow.right');
+        if (l) l.remove();
+        if (r) r.remove();
+    }
 }
