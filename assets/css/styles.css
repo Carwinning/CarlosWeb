@@ -127,7 +127,7 @@ footer {
     padding: 24px;
     border-radius: 8px;
     max-width: 1600px;
-    min-width: 900px;
+    min-width: 700px;
     width: min(92vw, 1600px);
     position: relative;
     box-sizing: border-box;
