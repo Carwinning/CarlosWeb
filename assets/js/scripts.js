@@ -130,7 +130,48 @@ const galleries = {
 
 let currentGallery = null;
 let currentIndex = 0;
-const IMAGES_PER_VIEW = 5;
+// const IMAGES_PER_VIEW = 5;
+
+function computeImagesPerView() {
+    const modal = document.querySelector('.modal-content');
+    const imagesDiv = document.getElementById('galleryImages');
+    if (!modal || !imagesDiv) return 3;
+
+    const gap = 16;
+    const arrowReserve = 64 + 64;
+    const modalStyle = getComputedStyle(modal);
+    const paddingLeft = parseFloat(modalStyle.paddingLeft) || 0;
+    const paddingRight = parseFloat(modalStyle.paddingRight) || 0;
+
+    const availableWidth = Math.max(0, modal.clientWidth - paddingLeft - paddingRight - arrowReserve);
+
+    const cssMaxPerImage = 220;
+
+    const perView = Math.floor((availableWidth + gap) / (cssMaxPerImage + gap));
+
+    return Math.min(5, Math.max(1, perView || 1));
+}
+
+function ensureArrows() {
+    const modal = document.querySelector('.modal-content');
+    if (!modal) return;
+    const oldLeft = modal.querySelector('.arrow.left');
+    const oldRight = modal.querySelector('.arrow.right');
+    if (oldLeft) oldLeft.remove();
+    if (oldRight) oldRight.remove();
+
+    const left = document.createElement('span');
+    left.className = 'arrow left';
+    left.innerText = '◀';
+    left.addEventListener('click', () => scrollGallery(-1));
+    modal.appendChild(left);
+
+    const right = document.createElement('span');
+    right.className = 'arrow right';
+    right.innerText = '▶';
+    right.addEventListener('click', () => scrollGallery(1));
+    modal.appendChild(right);
+}
 
 function openGallery(project) {
     currentGallery = galleries[project];
@@ -143,26 +184,47 @@ function openGallery(project) {
 function updateGalleryModal() {
     const imagesDiv = document.getElementById('galleryImages');
     const descDiv = document.getElementById('galleryDescription');
+    const titleEl = document.getElementById('galleryTitle');
+    if (!currentGallery || !imagesDiv) return;
+
+    const perView = computeImagesPerView();
+
+    const maxIndex = Math.max(0, currentGallery.images.length - perView);
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+    if (currentIndex < 0) currentIndex = 0;
+
     imagesDiv.innerHTML = '';
 
-    for (let i = currentIndex; i < Math.min(currentIndex + IMAGES_PER_VIEW, currentGallery.images.length); i++) {
+    const modal = document.querySelector('.modal-content');
+    const modalStyle = modal ? getComputedStyle(modal) : null;
+    const paddingLeft = modalStyle ? parseFloat(modalStyle.paddingLeft) || 0 : 0;
+    const paddingRight = modalStyle ? parseFloat(modalStyle.paddingRight) || 0 : 0;
+    const arrowReserve = 64 + 64;
+    const availableWidth = Math.max(0, (modal ? modal.clientWidth : window.innerWidth) - paddingLeft - paddingRight - arrowReserve);
+    const gap = 16;
+    const perImageWidth = Math.min(220, Math.floor((availableWidth - gap * (perView - 1)) / perView));
+
+    for (let i = currentIndex; i < Math.min(currentIndex + perView, currentGallery.images.length); i++) {
         const img = document.createElement('img');
         img.src = currentGallery.images[i];
-        img.style.maxWidth = '260px';
-        img.style.margin = '0 8px';
-        img.style.borderRadius = '8px';
+        img.alt = currentGallery.titles ? (currentGallery.titles[i] || '') : '';
+        img.style.maxWidth = perImageWidth + 'px';
+        img.style.maxHeight = 'calc(60vh - 40px)';
+        img.style.objectFit = 'cover';
         imagesDiv.appendChild(img);
     }
 
-    imagesDiv.insertAdjacentHTML('afterbegin', `<span class="arrow left" onclick="scrollGallery(-1)">&lt;</span>`);
-    imagesDiv.insertAdjacentHTML('beforeend', `<span class="arrow right" onclick="scrollGallery(1)">&gt;</span>`);
+    ensureArrows();
 
-    descDiv.textContent = currentGallery.description;
+    titleEl && (titleEl.textContent = currentGallery.name || '');
+    descDiv && (descDiv.textContent = currentGallery.description || '');
 }
 
 function scrollGallery(direction) {
-    const maxIndex = Math.max(0, currentGallery.images.length - IMAGES_PER_VIEW);
-    currentIndex += direction * IMAGES_PER_VIEW;
+    if (!currentGallery) return;
+    const step = computeImagesPerView();
+    const maxIndex = Math.max(0, currentGallery.images.length - step);
+    currentIndex += direction * step;
     if (currentIndex < 0) currentIndex = 0;
     if (currentIndex > maxIndex) currentIndex = maxIndex;
     updateGalleryModal();
