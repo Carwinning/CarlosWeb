@@ -322,3 +322,27 @@ footer {
     #galleryVideos { width: calc(100% - 48px); gap: 8px; }
     .video-wrap iframe { aspect-ratio: 16 / 9; }
 }
+
+.home-photo-gallery {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 16px 0 32px;
+    align-items: stretch;
+}
+
+.home-photo-gallery img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .home-photo-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+    .home-photo-gallery { grid-template-columns: 1fr; gap: 10px; }
+}
