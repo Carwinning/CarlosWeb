@@ -126,7 +126,7 @@ footer {
     background: rgba(67, 67, 67, 0.92);
     padding: 24px;
     border-radius: 8px;
-    max-width: 1600px;
+    max-width: 1200px;
     min-width: 700px;
     width: min(92vw, 1600px);
     position: relative;
@@ -143,6 +143,12 @@ footer {
     #galleryImages { padding: 0 48px; }
     .arrow { font-size: 1.8em; padding: 6px 8px; }
     #galleryImages img { max-width: min(160px, calc((100% - 120px) / 5)); }
+    #galleryDescription {
+        width: calc(100% - 48px);
+        max-width: none;
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
 }
 
 .close {
@@ -179,6 +185,23 @@ footer {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     box-sizing: border-box;
 }
+
+#galleryDescription {
+    width: 88%;
+    max-width: 1100px;
+    box-sizing: border-box;
+    font-size: 1.05rem; 
+    line-height: 1.6;
+    color: #e8e8e8;
+    margin: 12px auto 0;
+    padding: 12px 20px;
+    text-align: left;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.04);
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
 
 .arrow {
     position: absolute;
