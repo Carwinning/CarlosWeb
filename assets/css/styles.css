@@ -322,6 +322,13 @@ footer {
     }
     #galleryVideos { width: calc(100% - 48px); gap: 8px; }
     .video-wrap iframe { aspect-ratio: 16 / 9; }
+    .modal-content { min-width: 0; }
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        margin-right: 16px;
+        margin-bottom: 8px;
+    }
 }
 
 .home-photo-gallery {
@@ -343,7 +350,15 @@ footer {
 
 @media (max-width: 900px) {
     .home-photo-gallery { grid-template-columns: repeat(2, 1fr); }
+    .project-thumb {
+        flex: 0 0 calc((100% - 24px) / 2);
+        width: calc((100% - 24px) / 2);
+    }
 }
 @media (max-width: 480px) {
     .home-photo-gallery { grid-template-columns: 1fr; gap: 10px; }
+    .project-thumb {
+        flex: 0 0 100%;
+        width: 100%;
+    }
 }
