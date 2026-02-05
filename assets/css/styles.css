@@ -249,6 +249,18 @@ footer {
     margin-bottom: 24px;
     color: #dedede;
     overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    max-width: 200px;
 }
 
 .thumb-container {
@@ -304,10 +316,33 @@ footer {
     background: #222;
     margin-right: 32px;
     margin-bottom: 16px;
+
+    float: none; /* Override the float */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 16px;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 8px;
+}
+
+.contact-row a {
+    text-decoration: none;
+    color: #ffbb55;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-row a:hover {
+    color: #ff8800;
 }
 
 .intro-text {
-    overflow: hidden; 
+    flex: 1;
+    overflow: hidden;
 }
 
 @media (max-width: 760px) {
