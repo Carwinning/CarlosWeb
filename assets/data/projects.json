@@ -8,7 +8,7 @@
         },
         {
           "heading": "Combat Robotics",
-          "projectIds": ["Underdawg", "Uppydawg", "DAYBREAK", "Maxydawg", "Lildawg"]
+          "projectIds": ["Hotdawwg", "Underdawg", "Uppydawg", "DAYBREAK", "Maxydawg", "Lildawg"]
         }
       ]
     },
@@ -22,6 +22,20 @@
     }
   },
   "projects": {
+    "Hotdawwg": {
+      "id": "Hotdawwg",
+      "title": "Hotdawwg",
+      "thumb": "assets/images/combat-robotics/Hotdawwg/thumb.png",
+      "images": [
+        "assets/images/combat-robotics/Hotdawwg/1.png",
+        "assets/images/combat-robotics/Hotdawwg/2.png",
+        "assets/images/combat-robotics/Hotdawwg/3.jpg"
+      ],
+      "description": "Hotdawwg is a '12lb' multibot combat robot where each half is 8lbs. The robots are made with a welded steel frame and use a flamethrower as the weapon. The robot uses a mecanum drive for omni-directional movement. To avoid problems with traction due to having free spinning rollers on the wheels, the rollers themselves have 'cleats' that dig into the wooden floors of the arenas. The robot is very new and has competed at April and May NHRL, and I can't wait to see how it performs after some more refinement!",
+      "videos": [
+        "https://www.youtube.com/watch?v=bYorfSCw7zY"
+      ]
+    },
     "Underdawg": {
       "id": "Underdawg",
       "title": "Underdawg",
@@ -177,13 +191,14 @@
       ],
       "description": "Trident is a WIP robotic arm that will have a total of 3 different kinds of gearboxes in its system: cycloidal, harmonic, and planetary. This is my first long-term personal project beyond combat robotics and classes that I am pursuing for the sake of learning new techniques. The arm is currently entirely 3D printed, but I would like to machine it out of metal in the future after having built a working 3D printed version.",
       "videos": [
-        "https://youtube.com/watch?v=RmS8dYewYpU?si=hax23ARUBnXjCTA1",
-        "https://youtube.com/watch?v=fHIOsCBUF-Y?si=2_-Qd7uE1dGrtb7X"
+        "https://www.youtube.com/watch?v=dyA3HHPnS0E",
+        "https://www.youtube.com/watch?v=tcxEIZozBv8",
+        "https://www.youtube.com/watch?v=6AjpW_ad1D0"
       ]
     }
   },
   "homePhotos": [
-    "assets/images/self/17.jpeg",
+    "assets/images/self/17.jpg",
     "assets/images/self/1.jpeg",
     "assets/images/self/2.jpeg",
     "assets/images/self/3.jpeg",
