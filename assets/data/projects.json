@@ -1,0 +1,203 @@
+{
+  "pages": {
+    "smart-juice": {
+      "sections": [
+        {
+          "heading": "Project Gallery",
+          "projectIds": ["Trident", "SauceathonBot", "StrobeDemo"]
+        },
+        {
+          "heading": "Combat Robotics",
+          "projectIds": ["Underdawg", "Uppydawg", "DAYBREAK", "Maxydawg", "Lildawg"]
+        }
+      ]
+    },
+    "creative-juice": {
+      "sections": [
+        {
+          "heading": "Project Gallery",
+          "projectIds": ["GlassFlowers", "GlassCritters", "CreativeMisc"]
+        }
+      ]
+    }
+  },
+  "projects": {
+    "Underdawg": {
+      "id": "Underdawg",
+      "title": "Underdawg",
+      "thumb": "assets/images/combat-robotics/Underdawg/thumb.jpg",
+      "images": [
+        "assets/images/combat-robotics/Underdawg/1.jpg",
+        "assets/images/combat-robotics/Underdawg/2.jpg",
+        "assets/images/combat-robotics/Underdawg/3.jpg",
+        "assets/images/combat-robotics/Underdawg/4.jpg",
+        "assets/images/combat-robotics/Underdawg/5.jpg",
+        "assets/images/combat-robotics/Underdawg/6.jpg",
+        "assets/images/combat-robotics/Underdawg/7.jpg",
+        "assets/images/combat-robotics/Underdawg/8.jpg"
+      ],
+      "description": "Underdawg is a 3lb beetle combat robot and was my first project at MIT and the reason for my pursuit in mechanical engineering. The first version of the robot took most of my first semester to design as part of a group. Beyond that, each next iteration has been of my own design. Underdawg has competed at its current iteration at 2 competitions, Build Fight Fun! in July of 2025 and NHRL in Nov of 2025. Underdawg lost both of its matches at NHRL, but placed second at Build Fight Fun!"
+    },
+    "Uppydawg": {
+      "id": "Uppydawg",
+      "title": "Uppydawg",
+      "thumb": "assets/images/combat-robotics/Uppydawg/thumb.jpg",
+      "images": [
+        "assets/images/combat-robotics/Uppydawg/1.jpg",
+        "assets/images/combat-robotics/Uppydawg/2.jpg",
+        "assets/images/combat-robotics/Uppydawg/3.jpg",
+        "assets/images/combat-robotics/Uppydawg/4.jpg",
+        "assets/images/combat-robotics/Uppydawg/5.jpg",
+        "assets/images/combat-robotics/Uppydawg/6.jpg",
+        "assets/images/combat-robotics/Uppydawg/7.jpg",
+        "assets/images/combat-robotics/Uppydawg/8.jpg",
+        "assets/images/combat-robotics/Uppydawg/9.jpg"
+      ],
+      "description": "Uppydawg is my second 1lb Plastic Antweight (Plant) combat robot made for a plant tournament at Northeastern University in the summer of 2025. Uppydawg is a full body robot that lifts opponents by getting under them with its slopped body and pressing a hidden arm on the floor below it to lift its body and the body of other robots. This robot was a simple way to experiment with other weapon types in combat robotics and have fun while at it!"
+    },
+    "DAYBREAK": {
+      "id": "DAYBREAK",
+      "title": "DAYBREAK",
+      "thumb": "assets/images/combat-robotics/DAYBREAK/thumb.jpeg",
+      "images": [
+        "assets/images/combat-robotics/DAYBREAK/1.jpeg",
+        "assets/images/combat-robotics/DAYBREAK/2.jpeg",
+        "assets/images/combat-robotics/DAYBREAK/3.jpeg",
+        "assets/images/combat-robotics/DAYBREAK/4.jpeg",
+        "assets/images/combat-robotics/DAYBREAK/5.jpeg",
+        "assets/images/combat-robotics/DAYBREAK/6.jpeg",
+        "assets/images/combat-robotics/DAYBREAK/7.jpeg",
+        "assets/images/combat-robotics/DAYBREAK/8.jpeg"
+      ],
+      "description": "DAYBREAK is a 30lb robot that was designed and built within the two weeks before its competition date. DAYBREAK was originally a flamethrower robot, but flamethrowers were banned at the NHRL competition, so I wanted to redesign DAYBREAK as a 'melty brain' robot which spins its entire body rapidly to attack. Given the time constraint, I used an existing welded frame and electronics for DAYBREAK. It was a fun experience to build a large bot in a short timeframe, though ultimately DAYBREAK was unable to compete as the drive system didn't have enough torque to spin DAYBREAK."
+    },
+    "Maxydawg": {
+      "id": "Maxydawg",
+      "title": "Maxydawg",
+      "thumb": "assets/images/combat-robotics/Maxydawg/thumb.jpeg",
+      "images": [
+        "assets/images/combat-robotics/Maxydawg/1.jpeg",
+        "assets/images/combat-robotics/Maxydawg/2.jpeg",
+        "assets/images/combat-robotics/Maxydawg/3.jpeg",
+        "assets/images/combat-robotics/Maxydawg/4.jpeg",
+        "assets/images/combat-robotics/Maxydawg/5.jpeg",
+        "assets/images/combat-robotics/Maxydawg/6.jpeg",
+        "assets/images/combat-robotics/Maxydawg/7.jpeg",
+        "assets/images/combat-robotics/Maxydawg/8.jpeg"
+      ],
+      "description": "Maxydawg is a 1lb Full Combat Antweight robot that I designed and built over the course of 13 hours to compete against against a friend building his robot in the same timeframe. Maxydawg's horizontal spinning weapon is mounted a custom 3D printed 'hubmotor' that mounts on a basic brushless motor. Maxydawg ended about 200g overweight, but regardless we fought five matches total until Maxydawg was too damaged to repair with the opposing bot winning with a score of 3-2."
+    },
+    "Lildawg": {
+      "id": "Lildawg",
+      "title": "Lildawg",
+      "thumb": "assets/images/combat-robotics/Lildawg/thumb.jpeg",
+      "images": [
+        "assets/images/combat-robotics/Lildawg/1.jpeg",
+        "assets/images/combat-robotics/Lildawg/2.jpeg",
+        "assets/images/combat-robotics/Lildawg/3.jpeg",
+        "assets/images/combat-robotics/Lildawg/4.jpeg"
+      ],
+      "description": "Lildawg was my first 1lb Plastic Antweight (Plant) and first multi-bot combat robot. I built Lildawg originally to be single robot, but had no proper gauge of large it should be and ended up with a robot that was way underweight. Instead of redesigning Lildawg, I decided to build a second copy of the robot because a multi-bot sounded more fun!"
+    },
+    "GlassFlowers": {
+      "id": "GlassFlowers",
+      "title": "Glass Flowers",
+      "thumb": "assets/images/creativejuice/GlassFlowers/thumb.jpg",
+      "images": [
+        "assets/images/creativejuice/GlassFlowers/1.jpg",
+        "assets/images/creativejuice/GlassFlowers/2.jpeg",
+        "assets/images/creativejuice/GlassFlowers/3.jpeg",
+        "assets/images/creativejuice/GlassFlowers/4.jpeg",
+        "assets/images/creativejuice/GlassFlowers/5.jpeg",
+        "assets/images/creativejuice/GlassFlowers/6.jpeg",
+        "assets/images/creativejuice/GlassFlowers/7.jpeg",
+        "assets/images/creativejuice/GlassFlowers/8.jpg"
+      ],
+      "description": "One of the new hobbies I picked up at MIT has been glass lampworking! I've been making many flowers as I've found them to be a great way to learn and practice techniques. Most of my flowers are the same basic design, but I'm starting to experiment making other kinds!"
+    },
+    "GlassCritters": {
+      "id": "GlassCritters",
+      "title": "Glass Critters",
+      "thumb": "assets/images/creativejuice/GlassCritters/thumb.jpeg",
+      "images": [
+        "assets/images/creativejuice/GlassCritters/1.jpeg",
+        "assets/images/creativejuice/GlassCritters/2.jpeg",
+        "assets/images/creativejuice/GlassCritters/3.jpeg"
+      ],
+      "description": "The reason I picked up glass lampworking was because I'd loved to make a collection of insects and other small critters, but they have proven much harder than I had thought they'd be. I'm currently focusing on making spiders over and over until I feel comfortable with the techniques involved. The legs especially have proven difficult to make, but I think I'll be able to move on to more complex designs soon!"
+    },
+    "CreativeMisc": {
+      "id": "CreativeMisc",
+      "title": "Misc",
+      "thumb": "assets/images/creativejuice/Misc/thumb.jpeg",
+      "images": [
+        "assets/images/creativejuice/Misc/1.jpeg",
+        "assets/images/creativejuice/Misc/2.jpeg",
+        "assets/images/creativejuice/Misc/3.jpeg",
+        "assets/images/creativejuice/Misc/4.jpeg"
+      ],
+      "description": "Here are some of the various random projects or gifts I've made!"
+    },
+    "SauceathonBot": {
+      "id": "SauceathonBot",
+      "title": "Sauceathon Bot",
+      "thumb": "assets/images/smartjuice/SauceathonBot/thumb.jpeg",
+      "images": [
+        "assets/images/smartjuice/SauceathonBot/1.jpeg",
+        "assets/images/smartjuice/SauceathonBot/2.jpg",
+        "assets/images/smartjuice/SauceathonBot/3.jpeg"
+      ],
+      "description": "I participated at Sauceathon 2025 in Norwalk, Connecticut in a group with 5 others to build a first person view robot that would 'save children' within an arena. We had a total of 24 hours to design and build the robot, we weren't told the final task until we had completed some subtasks first. Our robot was designed with the goal of completing a few high point tasks (saving 'high value' children) rather than completing many low point tasks. Our robot failed to perform as we wished, but it was my first real hardware hackathon and I had a blast participating!",
+      "videos": [
+        "https://youtube.com/watch?v=ZlGhO-jDPcA?si=auYscJAhavUlpejI"
+      ]
+    },
+    "StrobeDemo": {
+      "id": "StrobeDemo",
+      "title": "Strobe Demo",
+      "thumb": "assets/images/smartjuice/StrobeDemo/thumb.jpeg",
+      "images": [
+        "assets/images/smartjuice/StrobeDemo/1.jpeg",
+        "assets/images/smartjuice/StrobeDemo/2.jpeg",
+        "assets/images/smartjuice/StrobeDemo/3.jpeg"
+      ],
+      "description": "These are some simple containers for an adjustable strobe light and turntable that I had designed. These were used as teaching materials in an extreme imaging class at MIT over the summer of 2025.",
+      "videos": [
+        "https://www.youtube.com/watch?v=qJqM89YOtog"
+      ]
+    },
+    "Trident": {
+      "id": "Trident",
+      "title": "Trident",
+      "thumb": "assets/images/smartjuice/Trident/thumb.png",
+      "images": [
+        "assets/images/smartjuice/Trident/1.png",
+        "assets/images/smartjuice/Trident/2.jpeg",
+        "assets/images/smartjuice/Trident/3.png"
+      ],
+      "description": "Trident is a WIP robotic arm that will have a total of 3 different kinds of gearboxes in its system: cycloidal, harmonic, and planetary. This is my first long-term personal project beyond combat robotics and classes that I am pursuing for the sake of learning new techniques. The arm is currently entirely 3D printed, but I would like to machine it out of metal in the future after having built a working 3D printed version.",
+      "videos": [
+        "https://youtube.com/watch?v=RmS8dYewYpU?si=hax23ARUBnXjCTA1",
+        "https://youtube.com/watch?v=fHIOsCBUF-Y?si=2_-Qd7uE1dGrtb7X"
+      ]
+    }
+  },
+  "homePhotos": [
+    "assets/images/self/17.jpeg",
+    "assets/images/self/1.jpeg",
+    "assets/images/self/2.jpeg",
+    "assets/images/self/3.jpeg",
+    "assets/images/self/5.jpeg",
+    "assets/images/self/6.jpeg",
+    "assets/images/self/7.jpg",
+    "assets/images/self/8.jpg",
+    "assets/images/self/9.jpeg",
+    "assets/images/self/10.jpeg",
+    "assets/images/self/11.jpeg",
+    "assets/images/self/12.jpeg",
+    "assets/images/self/13.jpeg",
+    "assets/images/self/14.jpeg",
+    "assets/images/self/15.jpeg",
+    "assets/images/self/16.jpeg"
+  ]
+}

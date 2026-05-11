@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Experience</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -11,13 +11,28 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="smart-juice.html">Smart Juice</a></li>
-                <li><a href="creative-juice.html">Creative Juice</a></lWi>
-                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="smart-juice.html">Engineering Projects</a></li>
+                <li><a href="creative-juice.html">Creative Projects</a></li>
+                <li><a href="resume.html" class="active">Experience</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <h1>Experience</h1>
+ 
+        <div id="resume-loading">Loading resume...</div>
+ 
+        <div class="resume-container" id="resume-container" style="display:none;">
+            <div id="canvas-pages"></div>
+ 
+            <div class="resume-controls" id="page-controls" style="display:none;">
+                <button id="prev-btn" disabled>&#8592; Prev</button>
+                <span id="page-info"></span>
+                <button id="next-btn">Next &#8594;</button>
+            </div>
+ 
+            <a href="assets/docs/resume.pdf" download class="resume-download">Download PDF</a>
+        </div>
     </main>
     <script src="assets/js/scripts.js"></script>
 </body>
