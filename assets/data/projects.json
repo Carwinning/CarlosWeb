@@ -33,7 +33,8 @@
       ],
       "description": "Hotdawwg is a '12lb' multibot combat robot where each half is 8lbs. The robots are made with a welded steel frame and use a flamethrower as the weapon. The robot uses a mecanum drive for omni-directional movement. To avoid problems with traction due to having free spinning rollers on the wheels, the rollers themselves have 'cleats' that dig into the wooden floors of the arenas. The robot is very new and has competed at April and May NHRL, and I can't wait to see how it performs after some more refinement!",
       "videos": [
-        "https://www.youtube.com/watch?v=bYorfSCw7zY"
+        "https://www.youtube.com/watch?v=bYorfSCw7zY",
+        "https://www.youtube.com/watch?v=SefeuoR9Qm0"
       ]
     },
     "Underdawg": {
@@ -198,6 +199,7 @@
     }
   },
   "homePhotos": [
+    "assets/images/self/18.jpg",
     "assets/images/self/17.jpg",
     "assets/images/self/1.jpeg",
     "assets/images/self/2.jpeg",
