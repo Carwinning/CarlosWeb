@@ -7,33 +7,37 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="smart-juice.html">Engineering Projects</a></li>
-                <li><a href="creative-juice.html">Creative Projects</a></li>
-                <li><a href="resume.html" class="active">Experience</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html" class="active">Experience</a></li>
+        </ul>
+    </nav>
     <main>
-        <h1>Experience</h1>
- 
+        <h1 class="page-heading">Experience</h1>
+        <p class="page-sub">My resume, plus a fuller timeline of what I've worked on and learned along the way.</p>
+
         <div id="resume-loading">Loading resume...</div>
- 
+
         <div class="resume-container" id="resume-container" style="display:none;">
             <div id="canvas-pages"></div>
- 
+
             <div class="resume-controls" id="page-controls" style="display:none;">
                 <button id="prev-btn" disabled>&#8592; Prev</button>
                 <span id="page-info"></span>
                 <button id="next-btn">Next &#8594;</button>
             </div>
- 
+
             <a href="assets/docs/resume.pdf" download class="resume-download">Download PDF</a>
         </div>
+
+        <div class="timeline-section">
+            <h2 class="section-label">Timeline</h2>
+            <div class="timeline" id="timeline"></div>
+        </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>

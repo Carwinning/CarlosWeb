@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Projects</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="smart-juice.html">Engineering Projects</a></li>
-            <li><a href="creative-juice.html" class="active">Creative Projects</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
             <li><a href="resume.html">Experience</a></li>
         </ul>
     </nav>
     <main>
-        <h1>CREATIVE PROJECTS</h1>
-        <h3>Check out all of my for fun art-y and creative projects!</h3>
+        <h1 class="page-heading">Projects</h1>
+        <p class="page-sub">Everything I've built, from combat robots to blown glass. Filter by skill, or see what I'm working on right now.</p>
+
+        <div class="filters" id="filters"></div>
 
         <div id="project-sections"></div>
 
         <div id="galleryModal" class="modal" style="display:none;">
             <div class="modal-content">
                 <span class="close" onclick="closeGallery()">&times;</span>
-                <h2 id="galleryTitle"></h2> 
+                <h2 id="galleryTitle"></h2>
+                <div class="modal-tags" id="modalTags"></div>
                 <div id="galleryImages"></div>
                 <div id="galleryDescription"></div>
             </div>
         </div>
-
     </main>
     <script src="assets/js/scripts.js"></script>
 </body>
