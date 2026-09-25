@@ -1,6 +1,6 @@
 [
   {
-    "start": "Apr 2025",
+    "start": "Apr 2026",
     "end": "Present",
     "ongoing": true,
     "title": "Medical Device Intern",
@@ -16,6 +16,14 @@
     "description": "Manage and maintain common workshop machines and equipment, and help shop users with their projects and machine use."
   },
   {
+    "start": "June 2025",
+    "end": "Present",
+    "ongoing": true,
+    "title": "Makerspace Shop Mentor",
+    "org": "Metropolis \u2014 MIT, Cambridge, MA",
+    "description": "Run weekly shop trainings for users. Maintain and improve shop environment."
+  },
+  {
     "start": "Sep 2024",
     "end": "Present",
     "ongoing": true,
@@ -24,12 +32,20 @@
     "description": "Run new member onboarding and teach the fundamentals of combat robot design. Have built 5 combat robots across the 1lb, 3lb, and 12lb weight classes and competed at NHRL 5 times between two robots."
   },
   {
-    "start": "Sep 2024",
-    "end": "Present",
-    "ongoing": true,
-    "title": "Mechanical Engineering with Computer Science (Course 2A6)",
-    "org": "Massachusetts Institute of Technology \u2014 Cambridge, MA",
-    "description": ""
+    "start": "July 2026",
+    "end": "August 2026",
+    "ongoing": false,
+    "title": "NuVu Summer Coach",
+    "org": "NuVu \u2014 Cambridge, MA",
+    "description": "Coached two two week courses for high school students on combat robotics and electrical go-karts."
+  },
+  {
+    "start": "Jul 2025",
+    "end": "Aug 2025",
+    "ongoing": false,
+    "title": "Project and Shop Mentor",
+    "org": "Interphase Project Mentor \u2014 MIT, Cambridge, MA",
+    "description": "Mentored and led incoming freshmen on long-term projects with mechanical and electrical elements, maintained the workshop, and trained incoming freshmen on various machines."
   },
   {
     "start": "Jul 2025",
