@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "pages": {
     "smart-juice": {
       "sections": [
@@ -38,32 +37,6 @@
         "https://www.youtube.com/watch?v=SefeuoR9Qm0"
       ]
     },
-=======
-  "projectOrder": [
-    "Trident", "Hotdawwg", "Underdawg", "Uppydawg", "DAYBREAK", "Maxydawg", "Lildawg",
-    "SauceathonBot", "StrobeDemo", "GlassFlowers", "GlassCritters", "CreativeMisc"
-  ],
-  "projects": {
-    "Hotdawwg": {
-      "id": "Hotdawwg",
-      "title": "Hotdawwg",
-      "tags": ["CAD", "Electronics", "Tig Welding", "CNC Mill", "FDM Printing", "Waterjet", "Fiber Laser"],
-      "ongoing": true,
-      "thumb": "assets/images/combat-robotics/Hotdawwg/thumb.png",
-      "images": [
-        "assets/images/combat-robotics/Hotdawwg/1.png",
-        "assets/images/combat-robotics/Hotdawwg/2.png",
-        "assets/images/combat-robotics/Hotdawwg/3.jpg",
-        "assets/images/combat-robotics/Hotdawwg/4.png",
-        "assets/images/combat-robotics/Hotdawwg/5.png"
-      ],
-      "description": "Hotdawwg is a '12lb' multibot combat robot where each half is 8lbs. The robots are made with a welded steel frame and use a flamethrower as the weapon. The robot uses a mecanum drive for omni-directional movement. To avoid problems with traction due to having free spinning rollers on the wheels, the rollers themselves have 'cleats' that dig into the wooden floors of the arenas. The robot is very new and has competed at April and May NHRL, and I can't wait to see how it performs after some more refinement!",
-      "videos": [
-        "https://www.youtube.com/watch?v=bYorfSCw7zY",
-        "https://www.youtube.com/watch?v=SefeuoR9Qm0"
-      ]
-    },
->>>>>>> 5eaac530b42acd8a7895011b9ed1ecca58329772
     "Underdawg": {
       "id": "Underdawg",
       "title": "Underdawg",
@@ -253,10 +226,7 @@
     }
   },
   "homePhotos": [
-<<<<<<< HEAD
     "assets/images/self/18.jpg",
-=======
->>>>>>> 5eaac530b42acd8a7895011b9ed1ecca58329772
     "assets/images/self/17.jpg",
     "assets/images/self/1.jpeg",
     "assets/images/self/2.jpeg",
