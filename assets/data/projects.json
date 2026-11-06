@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "pages": {
     "smart-juice": {
       "sections": [
@@ -37,9 +38,37 @@
         "https://www.youtube.com/watch?v=SefeuoR9Qm0"
       ]
     },
+=======
+  "projectOrder": [
+    "Trident", "Hotdawwg", "Underdawg", "Uppydawg", "DAYBREAK", "Maxydawg", "Lildawg",
+    "SauceathonBot", "StrobeDemo", "GlassFlowers", "GlassCritters", "CreativeMisc"
+  ],
+  "projects": {
+    "Hotdawwg": {
+      "id": "Hotdawwg",
+      "title": "Hotdawwg",
+      "tags": ["CAD", "Electronics", "Tig Welding", "CNC Mill", "FDM Printing", "Waterjet", "Fiber Laser"],
+      "ongoing": true,
+      "thumb": "assets/images/combat-robotics/Hotdawwg/thumb.png",
+      "images": [
+        "assets/images/combat-robotics/Hotdawwg/1.png",
+        "assets/images/combat-robotics/Hotdawwg/2.png",
+        "assets/images/combat-robotics/Hotdawwg/3.jpg",
+        "assets/images/combat-robotics/Hotdawwg/4.png",
+        "assets/images/combat-robotics/Hotdawwg/5.png"
+      ],
+      "description": "Hotdawwg is a '12lb' multibot combat robot where each half is 8lbs. The robots are made with a welded steel frame and use a flamethrower as the weapon. The robot uses a mecanum drive for omni-directional movement. To avoid problems with traction due to having free spinning rollers on the wheels, the rollers themselves have 'cleats' that dig into the wooden floors of the arenas. The robot is very new and has competed at April and May NHRL, and I can't wait to see how it performs after some more refinement!",
+      "videos": [
+        "https://www.youtube.com/watch?v=bYorfSCw7zY",
+        "https://www.youtube.com/watch?v=SefeuoR9Qm0"
+      ]
+    },
+>>>>>>> 5eaac530b42acd8a7895011b9ed1ecca58329772
     "Underdawg": {
       "id": "Underdawg",
       "title": "Underdawg",
+      "tags": ["CAD", "Electronics", "FDM Printing", "Waterjet"],
+      "ongoing": true,
       "thumb": "assets/images/combat-robotics/Underdawg/thumb.jpg",
       "images": [
         "assets/images/combat-robotics/Underdawg/1.jpg",
@@ -56,6 +85,8 @@
     "Uppydawg": {
       "id": "Uppydawg",
       "title": "Uppydawg",
+      "tags": ["CAD", "Electronics", "FDM Printing"],
+      "ongoing": false,
       "thumb": "assets/images/combat-robotics/Uppydawg/thumb.jpg",
       "images": [
         "assets/images/combat-robotics/Uppydawg/1.jpg",
@@ -73,6 +104,8 @@
     "DAYBREAK": {
       "id": "DAYBREAK",
       "title": "DAYBREAK",
+      "tags": ["Mig Welding", "CAD", "Electronics", "FDM Printing", "Waterjet"],
+      "ongoing": false,
       "thumb": "assets/images/combat-robotics/DAYBREAK/thumb.jpeg",
       "images": [
         "assets/images/combat-robotics/DAYBREAK/1.jpeg",
@@ -89,6 +122,8 @@
     "Maxydawg": {
       "id": "Maxydawg",
       "title": "Maxydawg",
+      "tags": ["CAD", "FDM Printing", "Electronics", "Fiber Laser"],
+      "ongoing": false,
       "thumb": "assets/images/combat-robotics/Maxydawg/thumb.jpeg",
       "images": [
         "assets/images/combat-robotics/Maxydawg/1.jpeg",
@@ -100,11 +135,13 @@
         "assets/images/combat-robotics/Maxydawg/7.jpeg",
         "assets/images/combat-robotics/Maxydawg/8.jpeg"
       ],
-      "description": "Maxydawg is a 1lb Full Combat Antweight robot that I designed and built over the course of 13 hours to compete against against a friend building his robot in the same timeframe. Maxydawg's horizontal spinning weapon is mounted a custom 3D printed 'hubmotor' that mounts on a basic brushless motor. Maxydawg ended about 200g overweight, but regardless we fought five matches total until Maxydawg was too damaged to repair with the opposing bot winning with a score of 3-2."
+      "description": "Maxydawg is a 1lb Full Combat Antweight robot that I designed and built over the course of 13 hours to compete against a friend building his robot in the same timeframe. Maxydawg's horizontal spinning weapon is mounted on a custom 3D printed 'hubmotor' that mounts on a basic brushless motor. Maxydawg ended about 200g overweight, but regardless we fought five matches total until Maxydawg was too damaged to repair, with the opposing bot winning with a score of 3-2."
     },
     "Lildawg": {
       "id": "Lildawg",
       "title": "Lildawg",
+      "tags": ["CAD", "FDM Printing", "Electronics"],
+      "ongoing": false,
       "thumb": "assets/images/combat-robotics/Lildawg/thumb.jpeg",
       "images": [
         "assets/images/combat-robotics/Lildawg/1.jpeg",
@@ -112,11 +149,13 @@
         "assets/images/combat-robotics/Lildawg/3.jpeg",
         "assets/images/combat-robotics/Lildawg/4.jpeg"
       ],
-      "description": "Lildawg was my first 1lb Plastic Antweight (Plant) and first multi-bot combat robot. I built Lildawg originally to be single robot, but had no proper gauge of large it should be and ended up with a robot that was way underweight. Instead of redesigning Lildawg, I decided to build a second copy of the robot because a multi-bot sounded more fun!"
+      "description": "Lildawg was my first 1lb Plastic Antweight (Plant) and first multi-bot combat robot. I built Lildawg originally to be a single robot, but had no proper gauge of how large it should be and ended up with a robot that was way underweight. Instead of redesigning Lildawg, I decided to build a second copy of the robot because a multi-bot sounded more fun!"
     },
     "GlassFlowers": {
       "id": "GlassFlowers",
       "title": "Glass Flowers",
+      "tags": ["Glass Flameworks"],
+      "ongoing": true,
       "thumb": "assets/images/creativejuice/GlassFlowers/thumb.jpg",
       "images": [
         "assets/images/creativejuice/GlassFlowers/1.jpg",
@@ -133,17 +172,26 @@
     "GlassCritters": {
       "id": "GlassCritters",
       "title": "Glass Critters",
-      "thumb": "assets/images/creativejuice/GlassCritters/thumb.jpeg",
+      "tags": ["Glass Flameworks"],
+      "ongoing": true,
+      "thumb": "assets/images/creativejuice/GlassCritters/thumb.jpg",
       "images": [
+        "assets/images/creativejuice/GlassCritters/4.jpg",
+        "assets/images/creativejuice/GlassCritters/5.jpg",
+        "assets/images/creativejuice/GlassCritters/6.jpg",
+        "assets/images/creativejuice/GlassCritters/7.jpg",
+        "assets/images/creativejuice/GlassCritters/8.jpg",
         "assets/images/creativejuice/GlassCritters/1.jpeg",
         "assets/images/creativejuice/GlassCritters/2.jpeg",
         "assets/images/creativejuice/GlassCritters/3.jpeg"
       ],
-      "description": "The reason I picked up glass lampworking was because I'd loved to make a collection of insects and other small critters, but they have proven much harder than I had thought they'd be. I'm currently focusing on making spiders over and over until I feel comfortable with the techniques involved. The legs especially have proven difficult to make, but I think I'll be able to move on to more complex designs soon!"
+      "description": "The reason I picked up glass lampworking was because I'd love to make a collection of insects and other small critters, but they have proven much harder than I had thought they'd be. I'm currently focusing on making spiders over and over until I feel comfortable with the techniques involved. The legs especially have proven difficult to make, but I think I'll be able to move on to more complex designs soon!"
     },
     "CreativeMisc": {
       "id": "CreativeMisc",
       "title": "Misc",
+      "tags": ["Sewing", "Screenprinting", "Emroidery", "Stained Glass"],
+      "ongoing": false,
       "thumb": "assets/images/creativejuice/Misc/thumb.jpeg",
       "images": [
         "assets/images/creativejuice/Misc/1.jpeg",
@@ -156,13 +204,15 @@
     "SauceathonBot": {
       "id": "SauceathonBot",
       "title": "Sauceathon Bot",
+      "tags": ["Electronics", "Programming"],
+      "ongoing": false,
       "thumb": "assets/images/smartjuice/SauceathonBot/thumb.jpeg",
       "images": [
         "assets/images/smartjuice/SauceathonBot/1.jpeg",
         "assets/images/smartjuice/SauceathonBot/2.jpg",
         "assets/images/smartjuice/SauceathonBot/3.jpeg"
       ],
-      "description": "I participated at Sauceathon 2025 in Norwalk, Connecticut in a group with 5 others to build a first person view robot that would 'save children' within an arena. We had a total of 24 hours to design and build the robot, we weren't told the final task until we had completed some subtasks first. Our robot was designed with the goal of completing a few high point tasks (saving 'high value' children) rather than completing many low point tasks. Our robot failed to perform as we wished, but it was my first real hardware hackathon and I had a blast participating!",
+      "description": "I participated at Sauceathon 2025 in Norwalk, Connecticut in a group with 5 others to build a first person view robot that would 'save children' within an arena. We had a total of 24 hours to design and build the robot; we weren't told the final task until we had completed some subtasks first. Our robot was designed with the goal of completing a few high point tasks (saving 'high value' children) rather than completing many low point tasks. Our robot failed to perform as we wished, but it was my first real hardware hackathon and I had a blast participating!",
       "videos": [
         "https://youtube.com/watch?v=ZlGhO-jDPcA?si=auYscJAhavUlpejI"
       ]
@@ -170,6 +220,8 @@
     "StrobeDemo": {
       "id": "StrobeDemo",
       "title": "Strobe Demo",
+      "tags": ["CAD", "Electronics", "Programming"],
+      "ongoing": false,
       "thumb": "assets/images/smartjuice/StrobeDemo/thumb.jpeg",
       "images": [
         "assets/images/smartjuice/StrobeDemo/1.jpeg",
@@ -184,6 +236,8 @@
     "Trident": {
       "id": "Trident",
       "title": "Trident",
+      "tags": ["CAD", "Electronics", "FDM Printing", "Programming"],
+      "ongoing": true,
       "thumb": "assets/images/smartjuice/Trident/thumb.png",
       "images": [
         "assets/images/smartjuice/Trident/1.png",
@@ -199,7 +253,10 @@
     }
   },
   "homePhotos": [
+<<<<<<< HEAD
     "assets/images/self/18.jpg",
+=======
+>>>>>>> 5eaac530b42acd8a7895011b9ed1ecca58329772
     "assets/images/self/17.jpg",
     "assets/images/self/1.jpeg",
     "assets/images/self/2.jpeg",
